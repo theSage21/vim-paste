@@ -10,7 +10,4 @@ try:
     }))
     print urlopen(request).read()
 except Exception as e:
-    print "Something went wrong. Error log at paster.error"
-    f = file('paster.error', 'a')
-    f.write(e.__repr__())
-    f.close()
+    print "Error: ", e
