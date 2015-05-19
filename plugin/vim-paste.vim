@@ -8,7 +8,7 @@ if exists("g:VimPasterLoaded")
 endif
 
 function! Paste()
-    pyfile plugin/paster.py
+    pyfile ~/.vim/bundle/vim-paste/plugin/paster.py
 endfunc
 
 command! Paste call Paste()
