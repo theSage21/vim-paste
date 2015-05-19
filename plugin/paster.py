@@ -8,6 +8,12 @@ try:
         'lexer': 'python',
         'format': 'url',
     }))
-    print urlopen(request).read()
+    paste_url = urlopen(request).read()
+    try:
+        from pyperclip import copy
+        copy(paste_url)
+    except:
+        pass
+    print paste_url
 except Exception as e:
     print "Error: ", e
